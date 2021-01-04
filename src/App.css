@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.navBar{
+    position: sticky;
+    top: 0;
+    margin: 0;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    color:#F8EDEB;
+    background-color: #EF27A6;
+    z-index: 5;
+}
+
+.playField{
+    background-color: #FCD5CE;
+    margin: 0;
+    padding: 0;
+    height: auto;
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.playField .card{
+    position:relative;
+    justify-self: center;
+    margin:25px;
+    padding: 0;
+    width: auto;
+    height: auto;
+    
+}
+.playField .card:hover{
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+
+.playField .card img{
+    max-width: 100%;
+    height: auto;
+    border: #EF27A6 solid 5px;
+}
+.playField .card img:hover{
+    max-width: 105%;
+    border: #F8EDEB solid 5px;
+}
+
