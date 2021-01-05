@@ -3,7 +3,7 @@ function NavBar(props){
         <div className="navBar">
             <h1>Memory Game</h1>
             <p>Score: {props.score}</p>
-            <p>MaxScore: </p>
+            <p>MaxScore: {props.maxScore} </p>
         </div>
     )
 

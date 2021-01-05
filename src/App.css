@@ -26,21 +26,18 @@ body{
     grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.playField .card{
+.playField .cardContainer{
     position:relative;
     justify-self: center;
     margin:25px;
-    padding: 0;
+    padding:0;
     width: auto;
     height: auto;
-    
 }
-.playField .card:hover{
-    cursor: pointer;
+.playField .cardContainer:hover{
     margin-bottom: 0;
+    cursor: pointer;
 }
-
-
 .playField .card img{
     max-width: 100%;
     height: auto;

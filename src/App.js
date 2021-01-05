@@ -1,4 +1,3 @@
-import NavBar from "./components/NavBar"
 import PlayField from "./components/PlayField"
 import "./App.css"
 
