@@ -6,19 +6,31 @@ import Card from "./Card"
 function importAll(r) {
     return r.keys().map(r)
   }
-  function checkAvailability(arr, val) {
+function checkAvailability(arr, val) {
     return arr.some(function(arrVal) {
       return val === arrVal;
     });
+}
+function shuffleFisherYates(array) {
+    let i = array.length;
+    while (i--) {
+      const ri = Math.floor(Math.random() * (i + 1));
+      [array[i], array[ri]] = [array[ri], array[i]];
+    }
+    return array;
   }
   
-const images = importAll(require.context('./img', false, /\.(png|jpe?g|svg)$/))
-console.log(images)
+let images = importAll(require.context('./img', false, /\.(png|jpe?g|svg)$/))
 
 function PlayField(){
     const [score,setScore]=useState(0)
-    const [maxScore,setMaxScore]=useState(8)
+    const [maxScore,setMaxScore]=useState(0)
     const [picked,setPicked]=useState([])
+
+   
+    useEffect(()=>{
+        images=shuffleFisherYates(images)
+    })
 
     const addScore= () => {
         setScore(prevScore=>prevScore+1)
@@ -29,11 +41,12 @@ function PlayField(){
     function checkRepeat(event){
         setPicked(prevPicked=>{
             if(!checkAvailability(picked,event.target.src)){
+                addScore()
                return prevPicked.concat(event.target.src)
             }
             else{
-                console.log("repeated")
-                return prevPicked
+                setScore(0)
+                return prevPicked=[]
             }
         })
     }
@@ -42,33 +55,11 @@ function PlayField(){
         <div>
             <NavBar  score={score} maxScore={maxScore}/>
         <div className="playField">
-            <div className="cardContainer" onClick={addScore,checkRepeat}>
-                <Card  img={images[Math.floor(Math.random() * images.length)].default} />
-            </div>
-            <div className="cardContainer" onClick={addScore,checkRepeat}>
-                <Card  img={images[Math.floor(Math.random() * images.length)].default} />
-            </div>
-            <div className="cardContainer" onClick={addScore,checkRepeat}>
-                <Card  img={images[Math.floor(Math.random() * images.length)].default} />
-            </div>
-            <div className="cardContainer" onClick={addScore,checkRepeat}>
-                <Card  img={images[Math.floor(Math.random() * images.length)].default} />
-            </div>
-            <div className="cardContainer" onClick={addScore,checkRepeat}>
-                <Card  img={images[Math.floor(Math.random() * images.length)].default} />
-            </div>
-            <div className="cardContainer" onClick={addScore,checkRepeat}>
-                <Card  img={images[Math.floor(Math.random() * images.length)].default} />
-            </div>
-            <div className="cardContainer" onClick={addScore,checkRepeat}>
-                <Card  img={images[Math.floor(Math.random() * images.length)].default} />
-            </div>
-            <div className="cardContainer" onClick={addScore,checkRepeat}>
-                <Card  img={images[Math.floor(Math.random() * images.length)].default} />
-            </div>
-            <div className="cardContainer" onClick={addScore,checkRepeat}>
-                <Card  img={images[Math.floor(Math.random() * images.length)].default} />
-            </div>
+            {images.map(img =>
+                 <div className="cardContainer" onClick={checkRepeat}>
+                 <Card  img={img.default}/>
+             </div>
+             ) }
         </div>
         </div>
     )

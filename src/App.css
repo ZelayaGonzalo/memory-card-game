@@ -23,7 +23,7 @@ body{
     height: auto;
     max-width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .playField .cardContainer{
@@ -41,10 +41,55 @@ body{
 .playField .card img{
     max-width: 100%;
     height: auto;
-    border: #EF27A6 solid 5px;
+    border: #EF27A6 solid 3px;
 }
 .playField .card img:hover{
     max-width: 105%;
     border: #F8EDEB solid 5px;
 }
 
+@media (max-aspect-ratio: 9/5){
+    .playField{
+        background-color: #FCD5CE;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-aspect-ratio: 8/5){
+    .playField{
+        background-color: #FCD5CE;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+@media (max-aspect-ratio: 6/5){
+    .playField{
+        background-color: #FCD5CE;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media (max-aspect-ratio: 1/1){
+    .playField{
+        background-color: #FCD5CE;
+        margin: 0;
+        padding: 0;
+        height: auto;
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
