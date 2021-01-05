@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/memory-card-game/static/css/main.672b84c6.chunk.css",
+    "main.js": "/memory-card-game/static/js/main.2fcc0f3f.chunk.js",
+    "main.js.map": "/memory-card-game/static/js/main.2fcc0f3f.chunk.js.map",
+    "runtime-main.js": "/memory-card-game/static/js/runtime-main.0f663a00.js",
+    "runtime-main.js.map": "/memory-card-game/static/js/runtime-main.0f663a00.js.map",
+    "static/js/2.4ddaa84f.chunk.js": "/memory-card-game/static/js/2.4ddaa84f.chunk.js",
+    "static/js/2.4ddaa84f.chunk.js.map": "/memory-card-game/static/js/2.4ddaa84f.chunk.js.map",
+    "index.html": "/memory-card-game/index.html",
+    "static/css/main.672b84c6.chunk.css.map": "/memory-card-game/static/css/main.672b84c6.chunk.css.map",
+    "static/js/2.4ddaa84f.chunk.js.LICENSE.txt": "/memory-card-game/static/js/2.4ddaa84f.chunk.js.LICENSE.txt",
+    "static/media/Chika.png": "/memory-card-game/static/media/Chika.781e29f9.png",
+    "static/media/Dia.png": "/memory-card-game/static/media/Dia.b14f7232.png",
+    "static/media/Eli.png": "/memory-card-game/static/media/Eli.f45580da.png",
+    "static/media/Hanamaru.png": "/memory-card-game/static/media/Hanamaru.8a6c7cd0.png",
+    "static/media/Hanayo.png": "/memory-card-game/static/media/Hanayo.f422e65e.png",
+    "static/media/Honoka.png": "/memory-card-game/static/media/Honoka.c9243746.png",
+    "static/media/Kanan.png": "/memory-card-game/static/media/Kanan.e6ba0d5d.png",
+    "static/media/Kotori.png": "/memory-card-game/static/media/Kotori.b696a234.png",
+    "static/media/Maki.png": "/memory-card-game/static/media/Maki.bccb7020.png",
+    "static/media/Mari.png": "/memory-card-game/static/media/Mari.1b1e4779.png",
+    "static/media/Nico.png": "/memory-card-game/static/media/Nico.531d5d0b.png",
+    "static/media/Nozomi.png": "/memory-card-game/static/media/Nozomi.d2c4660f.png",
+    "static/media/Riko.png": "/memory-card-game/static/media/Riko.1e03d988.png",
+    "static/media/Rin.png": "/memory-card-game/static/media/Rin.a6810af9.png",
+    "static/media/Umi.png": "/memory-card-game/static/media/Umi.4df7c3aa.png",
+    "static/media/Yoshiko.png": "/memory-card-game/static/media/Yoshiko.99cd0e4b.png",
+    "static/media/You.png": "/memory-card-game/static/media/You.7f3f32f7.png",
+    "static/media/ruby.png": "/memory-card-game/static/media/ruby.157cceff.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.0f663a00.js",
+    "static/js/2.4ddaa84f.chunk.js",
+    "static/css/main.672b84c6.chunk.css",
+    "static/js/main.2fcc0f3f.chunk.js"
+  ]
+}
